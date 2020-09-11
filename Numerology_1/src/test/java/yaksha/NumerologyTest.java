@@ -23,5 +23,16 @@ class NumerologyTest {
 
 		 TestUtils.yakshaAssert(TestUtils.currentTest(),Numerology.findValue("LAKHAN")==17==true?"true":"false",TestUtils.businessTestFile);
 	}
+	@Test
+	public void testExceptionConditon() throws Exception{
 
+	              TestUtils.yakshaAssert(TestUtils.currentTest(),false,TestUtils.boundaryTestFile);          
+
+	} 
+
+	@Test
+	public void testBoundaryCondition() throws Exception {
+	              TestUtils.yakshaAssert(TestUtils.currentTest(),false,TestUtils.exceptionTestFile);
+
+	}
 }
